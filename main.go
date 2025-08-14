@@ -8,12 +8,6 @@ import (
 	_ "modernc.org/sqlite"
 )
 
-const (
-	ParcelStatusRegistered = "registered"
-	ParcelStatusSent       = "sent"
-	ParcelStatusDelivered  = "delivered"
-)
-
 type Parcel struct {
 	Number    int
 	Client    int
