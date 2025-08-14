@@ -4,6 +4,12 @@ import (
 	"database/sql"
 )
 
+const (
+	ParcelStatusRegistered = "registered"
+	ParcelStatusSent       = "sent"
+	ParcelStatusDelivered  = "delivered"
+)
+
 type ParcelStore struct {
 	db *sql.DB
 }
